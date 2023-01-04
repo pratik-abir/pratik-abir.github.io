@@ -3,8 +3,7 @@ info:
   title: XSS Attack
   description: |
     <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.location) src=1>"></form>
-  version: production
-basePath: /JSSResource/
+  version: 2.0.6
 produces:
   - application/xml
   - application/json
